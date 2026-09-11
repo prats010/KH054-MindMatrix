@@ -14,24 +14,22 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-container">
-          <h1>Find Government Schemes You Are Eligible For</h1>
-          <p>
-            An official public welfare discovery portal powered by AI. Check your eligibility across 12+ Central and State welfare programs with zero Aadhaar data storage.
-          </p>
+          <h1>{t("hero.title")}</h1>
+          <p>{t("hero.desc")}</p>
           
           <div className="hero-actions">
             <Link href="/profile" className="btn-primary">
-              Check Eligibility Now →
+              {t("hero.cta")}
             </Link>
             <Link href="#" className="btn-secondary">
-              Browse All Schemes
+              {t("hero.browse")}
             </Link>
           </div>
           
           <div className="trust-badges">
-            <span>✓ 100% Free Public Service</span>
-            <span>✓ No Login Required</span>
-            <span>✓ Screen Reader Friendly</span>
+            <span>{t("hero.badge_free")}</span>
+            <span>{t("hero.badge_login")}</span>
+            <span>{t("hero.badge_a11y")}</span>
           </div>
         </div>
       </section>
@@ -41,16 +39,16 @@ export default function HomePage() {
         <div className="info-container">
           <div className="info-grid">
             <div className="info-card">
-              <h3>Instant AI Matching</h3>
-              <p>Automated criteria check against age, income, and landholding rules with verified gazette criteria.</p>
+              <h3>{t("hero.card_1_title")}</h3>
+              <p>{t("hero.card_1_desc")}</p>
             </div>
             <div className="info-card">
-              <h3>12+ Verified Schemes</h3>
-              <p>Direct linkage to active Central and State schemes including PM-KISAN, Ayushman Bharat, and scholarships.</p>
+              <h3>{t("hero.card_2_title")}</h3>
+              <p>{t("hero.card_2_desc")}</p>
             </div>
             <div className="info-card">
-              <h3>100% Privacy Preserved</h3>
-              <p>Data stays on your device, zero biometric or PII storage, strictly compliant with DPDP guidelines.</p>
+              <h3>{t("hero.card_3_title")}</h3>
+              <p>{t("hero.card_3_desc")}</p>
             </div>
           </div>
         </div>
@@ -60,20 +58,20 @@ export default function HomePage() {
       <section className="stats-band">
         <div className="stats-grid">
           <div>
-            <div className="stat-val">₹18K+ Cr</div>
-            <div className="stat-label">Welfare Subsidies Tracked</div>
+            <div className="stat-val">{t("hero.stat_1_val")}</div>
+            <div className="stat-label">{t("hero.stat_1_label")}</div>
           </div>
           <div>
-            <div className="stat-val">12+</div>
-            <div className="stat-label">Active Central & State Schemes</div>
+            <div className="stat-val">{t("hero.stat_2_val")}</div>
+            <div className="stat-label">{t("hero.stat_2_label")}</div>
           </div>
           <div>
-            <div className="stat-val">36</div>
-            <div className="stat-label">States & UTs Supported</div>
+            <div className="stat-val">{t("hero.stat_3_val")}</div>
+            <div className="stat-label">{t("hero.stat_3_label")}</div>
           </div>
           <div>
-            <div className="stat-val">100%</div>
-            <div className="stat-label">Free & Open Access</div>
+            <div className="stat-val">{t("hero.stat_4_val")}</div>
+            <div className="stat-label">{t("hero.stat_4_label")}</div>
           </div>
         </div>
       </section>

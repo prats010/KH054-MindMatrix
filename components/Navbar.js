@@ -12,7 +12,7 @@ export default function Navbar() {
       {/* Government Utility Strip */}
       <div className="header-top-strip">
         <div className="strip-left">
-          Government of India | Ministry of Citizen Empowerment
+          {t("nav.gov_strip")}
         </div>
         <div className="strip-right">
           <span>A- | A | A+</span>
@@ -25,13 +25,13 @@ export default function Navbar() {
       <nav className="navbar" id="navbar">
         <Link href="/" className="navbar-brand">
           <span className="brand-emblem"></span>
-          JanSahayak
+          {t("app_name")}
         </Link>
 
         <div className="nav-links">
-          <Link href="/" className="nav-link">Schemes</Link>
-          <Link href="/profile" className="nav-link">Eligibility Check</Link>
-          <Link href="#" className="nav-link">Grievance</Link>
+          <Link href="/" className="nav-link">{t("nav.schemes")}</Link>
+          <Link href="/profile" className="nav-link">{t("nav.eligibility")}</Link>
+          <Link href="#" className="nav-link">{t("nav.grievance")}</Link>
           
           <select 
             value={language} 
@@ -49,7 +49,7 @@ export default function Navbar() {
             ))}
           </select>
 
-          <Link href="#" className="nav-link btn-login">Login</Link>
+          <Link href="#" className="nav-link btn-login">{t("nav.login")}</Link>
         </div>
       </nav>
     </header>

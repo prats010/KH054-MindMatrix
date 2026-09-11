@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
+import { useLanguage } from "@/lib/i18n";
 
 const STATES = [
   "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
@@ -44,12 +45,13 @@ const GOALS = [
 
 export default function ProfilePage() {
   const router = useRouter();
+  const { language, t } = useLanguage();
   const [step, setStep] = useState(0);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
 
   const [profile, setProfile] = useState({
-    age: 30,
+    age: 25,
     gender: "",
     state: "",
     income: 100000,
@@ -64,7 +66,6 @@ export default function ProfilePage() {
 
   const updateField = useCallback((field, value) => {
     setProfile((prev) => ({ ...prev, [field]: value }));
-    setErrors((prev) => ({ ...prev, [field]: null }));
   }, []);
 
   const toggleDocument = useCallback((doc) => {
@@ -114,7 +115,7 @@ export default function ProfilePage() {
       const res = await fetch("/api/recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ profile, language: "en" }),
+        body: JSON.stringify({ profile, language }),
       });
       const data = await res.json();
       sessionStorage.setItem("jansahayak-results", JSON.stringify(data));
@@ -128,10 +129,10 @@ export default function ProfilePage() {
   };
 
   const stepLabels = [
-    "1. Personal Details",
-    "2. Economic Details",
-    "3. Category & Status",
-    "4. Documents"
+    `1. ${t("steps.personal")}`,
+    `2. ${t("steps.economic")}`,
+    `3. ${t("steps.category")}`,
+    `4. ${t("steps.documents")}`
   ];
 
   const progressWidth = `${((step + 1) / 4) * 100}%`;
@@ -143,8 +144,8 @@ export default function ProfilePage() {
         <div className="form-page">
           <div className="loading-box">
             <div className="spinner"></div>
-            <h2>Processing your application...</h2>
-            <p>Evaluating criteria against central and state gazettes.</p>
+            <h2>{t("form.processing")}</h2>
+            <p>{t("form.processing_sub")}</p>
           </div>
         </div>
       </>
@@ -157,7 +158,7 @@ export default function ProfilePage() {
       <div className="form-page">
         {/* Stepper */}
         <div className="stepper">
-          <div className="stepper-header">Step {step + 1} of 4: {stepLabels[step].substring(3)}</div>
+          <div className="stepper-header">{t("form.step_of").replace("{0}", step + 1)} {stepLabels[step].substring(3)}</div>
           <div className="stepper-track">
             <div className="stepper-fill" style={{ width: progressWidth }}></div>
           </div>
@@ -172,31 +173,31 @@ export default function ProfilePage() {
         <div className="form-container">
           <div className="form-header">
             <h2>{stepLabels[step].substring(3)}</h2>
-            <p>Please provide accurate details to evaluate relevant welfare schemes.</p>
+            <p>{t("form.form_subtitle")}</p>
           </div>
 
           <div className="form-body">
-            {step === 0 && <StepPersonal profile={profile} updateField={updateField} toggleGoal={toggleGoal} errors={errors} />}
-            {step === 1 && <StepEconomic profile={profile} updateField={updateField} errors={errors} />}
-            {step === 2 && <StepCategory profile={profile} updateField={updateField} />}
-            {step === 3 && <StepDocuments profile={profile} toggleDocument={toggleDocument} />}
+            {step === 0 && <StepPersonal profile={profile} updateField={updateField} toggleGoal={toggleGoal} errors={errors} t={t} />}
+            {step === 1 && <StepEconomic profile={profile} updateField={updateField} errors={errors} t={t} />}
+            {step === 2 && <StepCategory profile={profile} updateField={updateField} t={t} />}
+            {step === 3 && <StepDocuments profile={profile} toggleDocument={toggleDocument} t={t} />}
           </div>
 
           {/* Actions */}
           <div className="form-actions">
             {step < 3 ? (
-              <button className="btn-primary" onClick={nextStep}>Continue to Step {step + 2} →</button>
+              <button className="btn-primary" onClick={nextStep}>{t("form.continue").replace("{0}", step + 2)}</button>
             ) : (
-              <button className="btn-primary" onClick={handleSubmit}>Submit & Find Schemes</button>
+              <button className="btn-primary" onClick={handleSubmit}>{t("form.submit")}</button>
             )}
             
             {step > 0 && (
-              <button className="btn-back" onClick={prevStep}>← Back</button>
+              <button className="btn-back" onClick={prevStep}>{t("form.back")}</button>
             )}
           </div>
           
           <div className="form-trust">
-            🔒 Your data is not stored. All checks are executed strictly in-browser under DPDP privacy standards.
+            {t("form.privacy_note")}
           </div>
         </div>
       </div>
@@ -206,12 +207,12 @@ export default function ProfilePage() {
 
 /* ======== STEP COMPONENTS ======== */
 
-function StepPersonal({ profile, updateField, toggleGoal, errors }) {
+function StepPersonal({ profile, updateField, toggleGoal, errors, t }) {
   return (
     <>
       <div className="form-group">
-        <label className="form-label">What kind of assistance are you looking for?</label>
-        <span className="form-helper">Select all that apply to help us prioritize your recommendations.</span>
+        <label className="form-label">{t("form.goals_label")}</label>
+        <span className="form-helper">{t("form.goals_helper")}</span>
         <div className="doc-grid">
           {GOALS.map((goal) => (
             <label key={goal} className="doc-label">
@@ -220,14 +221,14 @@ function StepPersonal({ profile, updateField, toggleGoal, errors }) {
                 checked={!!profile.goals[goal]} 
                 onChange={() => toggleGoal(goal)} 
               />
-              <span>{goal}</span>
+              <span>{t(`goals.${goal}`)}</span>
             </label>
           ))}
         </div>
       </div>
       <div className="form-group">
-        <label className="form-label">Age as per official records</label>
-        <span className="form-helper">Requires minimum 18 or 60 years for specific schemes.</span>
+        <label className="form-label">{t("form.age")}</label>
+        <span className="form-helper">{t("form.age_helper")}</span>
         <div className="slider-container">
           <input
             type="number"
@@ -248,30 +249,34 @@ function StepPersonal({ profile, updateField, toggleGoal, errors }) {
       </div>
 
       <div className="form-group">
-        <label className="form-label">Gender Identity {errors.gender && <span style={{color: 'red'}}>*</span>}</label>
+        <label className="form-label">{t("form.gender")} {errors.gender && <span style={{color: 'red'}}>*</span>}</label>
         <div className="radio-group">
-          {["Male", "Female", "Other / Transgender"].map((g) => (
-            <label key={g} className="radio-card">
+          {[
+            { value: "Male", label: t("form.male") },
+            { value: "Female", label: t("form.female") },
+            { value: "Other", label: t("form.other") }
+          ].map((g) => (
+            <label key={g.value} className="radio-card">
               <input 
                 type="radio" 
                 name="gender" 
-                checked={profile.gender === (g.includes("Other") ? "Other" : g)}
-                onChange={() => updateField("gender", g.includes("Other") ? "Other" : g)} 
+                checked={profile.gender === g.value}
+                onChange={() => updateField("gender", g.value)} 
               />
-              <div className="radio-label">{g}</div>
+              <div className="radio-label">{g.label}</div>
             </label>
           ))}
         </div>
       </div>
 
       <div className="form-group">
-        <label className="form-label">State of Residence {errors.state && <span style={{color: 'red'}}>*</span>}</label>
+        <label className="form-label">{t("form.state")} {errors.state && <span style={{color: 'red'}}>*</span>}</label>
         <select
           className="form-select"
           value={profile.state}
           onChange={(e) => updateField("state", e.target.value)}
         >
-          <option value="">-- Select your state or territory --</option>
+          <option value="">{t("form.select_state")}</option>
           {STATES.map((s) => (
             <option key={s} value={s}>{s}</option>
           ))}
@@ -281,11 +286,11 @@ function StepPersonal({ profile, updateField, toggleGoal, errors }) {
   );
 }
 
-function StepEconomic({ profile, updateField, errors }) {
+function StepEconomic({ profile, updateField, errors, t }) {
   return (
     <>
       <div className="form-group">
-        <label className="form-label">Annual Family Income (₹)</label>
+        <label className="form-label">{t("form.income")}</label>
         <div className="slider-container">
           <input
             type="number"
@@ -307,29 +312,29 @@ function StepEconomic({ profile, updateField, errors }) {
       </div>
 
       <div className="form-group">
-        <label className="form-label">Primary Occupation {errors.occupation && <span style={{color: 'red'}}>*</span>}</label>
+        <label className="form-label">{t("form.occupation")} {errors.occupation && <span style={{color: 'red'}}>*</span>}</label>
         <select
           className="form-select"
           value={profile.occupation}
           onChange={(e) => updateField("occupation", e.target.value)}
         >
-          <option value="">-- Select occupation --</option>
+          <option value="">{t("form.select_occupation")}</option>
           {OCCUPATIONS.map((o) => (
-            <option key={o} value={o}>{o}</option>
+            <option key={o} value={o}>{t(`occupations.${o}`)}</option>
           ))}
         </select>
       </div>
 
       <div className="form-group">
-        <label className="form-label">Education Level</label>
+        <label className="form-label">{t("form.education")}</label>
         <select
           className="form-select"
           value={profile.education}
           onChange={(e) => updateField("education", e.target.value)}
         >
-          <option value="">-- Select education --</option>
+          <option value="">{t("form.select_education")}</option>
           {EDUCATION_LEVELS.map((e) => (
-            <option key={e} value={e}>{e}</option>
+            <option key={e} value={e}>{t(`education_levels.${e}`)}</option>
           ))}
         </select>
       </div>
@@ -337,47 +342,47 @@ function StepEconomic({ profile, updateField, errors }) {
   );
 }
 
-function StepCategory({ profile, updateField }) {
+function StepCategory({ profile, updateField, t }) {
   return (
     <>
       <div className="form-group">
-        <label className="form-label">Social Category</label>
+        <label className="form-label">{t("form.category")}</label>
         <select
           className="form-select"
           value={profile.category}
           onChange={(e) => updateField("category", e.target.value)}
         >
-          <option value="">-- Select category --</option>
+          <option value="">{t("form.select_category")}</option>
           {CATEGORIES.map((c) => (
-            <option key={c} value={c}>{c}</option>
+            <option key={c} value={c}>{t(`categories.${c}`)}</option>
           ))}
         </select>
       </div>
 
       <div className="form-group">
-        <label className="form-label">Are you a registered farmer?</label>
+        <label className="form-label">{t("form.is_farmer")}</label>
         <div className="radio-group">
           <label className="radio-card">
             <input type="radio" name="farmer" checked={profile.is_farmer === true} onChange={() => updateField("is_farmer", true)} />
-            <div className="radio-label">Yes</div>
+            <div className="radio-label">{t("form.yes")}</div>
           </label>
           <label className="radio-card">
             <input type="radio" name="farmer" checked={profile.is_farmer === false} onChange={() => updateField("is_farmer", false)} />
-            <div className="radio-label">No</div>
+            <div className="radio-label">{t("form.no")}</div>
           </label>
         </div>
       </div>
 
       <div className="form-group">
-        <label className="form-label">Do you have a certified disability (40%+)?</label>
+        <label className="form-label">{t("form.is_disabled")}</label>
         <div className="radio-group">
           <label className="radio-card">
             <input type="radio" name="disability" checked={profile.is_disabled === true} onChange={() => updateField("is_disabled", true)} />
-            <div className="radio-label">Yes</div>
+            <div className="radio-label">{t("form.yes")}</div>
           </label>
           <label className="radio-card">
             <input type="radio" name="disability" checked={profile.is_disabled === false} onChange={() => updateField("is_disabled", false)} />
-            <div className="radio-label">No</div>
+            <div className="radio-label">{t("form.no")}</div>
           </label>
         </div>
       </div>
@@ -385,11 +390,11 @@ function StepCategory({ profile, updateField }) {
   );
 }
 
-function StepDocuments({ profile, toggleDocument }) {
+function StepDocuments({ profile, toggleDocument, t }) {
   return (
     <div className="form-group">
-      <label className="form-label">Available Documents</label>
-      <span className="form-helper">Select the documents you currently possess.</span>
+      <label className="form-label">{t("form.documents_label")}</label>
+      <span className="form-helper">{t("form.documents_helper")}</span>
       <div className="doc-grid">
         {DOCUMENTS.map((doc) => (
           <label key={doc} className="doc-label">
@@ -398,7 +403,7 @@ function StepDocuments({ profile, toggleDocument }) {
               checked={!!profile.has_documents[doc]} 
               onChange={() => toggleDocument(doc)} 
             />
-            <span>{doc.replace(/([A-Z])/g, ' $1').trim()}</span>
+            <span>{t(`documents.${doc}`)}</span>
           </label>
         ))}
       </div>
