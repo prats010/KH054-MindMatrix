@@ -33,6 +33,15 @@ const DOCUMENTS = [
   "AgeCert", "DisabilityCert", "ExServiceCert", "DeathCert"
 ];
 
+const GOALS = [
+  "Agriculture & Farming",
+  "Business & Entrepreneurship",
+  "Healthcare & Medical",
+  "Education & Scholarships",
+  "Housing & Shelter",
+  "Pensions & Social Security"
+];
+
 export default function ProfilePage() {
   const router = useRouter();
   const [step, setStep] = useState(0);
@@ -50,6 +59,7 @@ export default function ProfilePage() {
     is_farmer: false,
     is_disabled: false,
     has_documents: {},
+    goals: {},
   });
 
   const updateField = useCallback((field, value) => {
@@ -63,6 +73,16 @@ export default function ProfilePage() {
       has_documents: {
         ...prev.has_documents,
         [doc]: !prev.has_documents[doc],
+      },
+    }));
+  }, []);
+
+  const toggleGoal = useCallback((goal) => {
+    setProfile((prev) => ({
+      ...prev,
+      goals: {
+        ...prev.goals,
+        [goal]: !prev.goals[goal],
       },
     }));
   }, []);
@@ -156,7 +176,7 @@ export default function ProfilePage() {
           </div>
 
           <div className="form-body">
-            {step === 0 && <StepPersonal profile={profile} updateField={updateField} errors={errors} />}
+            {step === 0 && <StepPersonal profile={profile} updateField={updateField} toggleGoal={toggleGoal} errors={errors} />}
             {step === 1 && <StepEconomic profile={profile} updateField={updateField} errors={errors} />}
             {step === 2 && <StepCategory profile={profile} updateField={updateField} />}
             {step === 3 && <StepDocuments profile={profile} toggleDocument={toggleDocument} />}
@@ -186,9 +206,25 @@ export default function ProfilePage() {
 
 /* ======== STEP COMPONENTS ======== */
 
-function StepPersonal({ profile, updateField, errors }) {
+function StepPersonal({ profile, updateField, toggleGoal, errors }) {
   return (
     <>
+      <div className="form-group">
+        <label className="form-label">What kind of assistance are you looking for?</label>
+        <span className="form-helper">Select all that apply to help us prioritize your recommendations.</span>
+        <div className="doc-grid">
+          {GOALS.map((goal) => (
+            <label key={goal} className="doc-label">
+              <input 
+                type="checkbox" 
+                checked={!!profile.goals[goal]} 
+                onChange={() => toggleGoal(goal)} 
+              />
+              <span>{goal}</span>
+            </label>
+          ))}
+        </div>
+      </div>
       <div className="form-group">
         <label className="form-label">Age as per official records</label>
         <span className="form-helper">Requires minimum 18 or 60 years for specific schemes.</span>

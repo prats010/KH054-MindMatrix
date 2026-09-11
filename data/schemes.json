@@ -30,7 +30,10 @@
     "mutual_exclusions": [],
     "source_url": "https://pmkisan.gov.in",
     "how_to_apply": "Register on the PM-KISAN portal or visit your nearest CSC centre.",
-    "_last_synced": "2026-09-11T09:17:49.313Z"
+    "_last_synced": "2026-09-11T09:17:49.313Z",
+    "tags": [
+      "Agriculture & Farming"
+    ]
   },
   {
     "id": "PMUY",
@@ -62,7 +65,10 @@
     "mutual_exclusions": [],
     "source_url": "https://pmuy.gov.in",
     "how_to_apply": "Apply at the nearest LPG distributor with KYC documents.",
-    "_last_synced": "2026-09-11T09:17:49.314Z"
+    "_last_synced": "2026-09-11T09:17:49.314Z",
+    "tags": [
+      "Housing & Shelter"
+    ]
   },
   {
     "id": "PM-SYM",
@@ -105,7 +111,10 @@
     ],
     "source_url": "https://maandhan.in",
     "how_to_apply": "Visit nearest CSC or register on maandhan.in portal.",
-    "_last_synced": "2026-09-11T09:17:49.314Z"
+    "_last_synced": "2026-09-11T09:17:49.314Z",
+    "tags": [
+      "Pensions & Social Security"
+    ]
   },
   {
     "id": "NSAP",
@@ -140,7 +149,10 @@
     ],
     "source_url": "https://nsap.nic.in",
     "how_to_apply": "Apply through your Gram Panchayat or Block Development Officer.",
-    "_last_synced": "2026-09-11T09:17:49.314Z"
+    "_last_synced": "2026-09-11T09:17:49.314Z",
+    "tags": [
+      "Pensions & Social Security"
+    ]
   },
   {
     "id": "APY",
@@ -174,7 +186,10 @@
     ],
     "source_url": "https://npscra.nsdl.co.in/scheme-details.php",
     "how_to_apply": "Open APY account at any bank branch or via net banking.",
-    "_last_synced": "2026-09-11T09:17:49.314Z"
+    "_last_synced": "2026-09-11T09:17:49.314Z",
+    "tags": [
+      "Pensions & Social Security"
+    ]
   },
   {
     "id": "PMAY-G",
@@ -206,7 +221,10 @@
     "mutual_exclusions": [],
     "source_url": "https://pmayg.nic.in",
     "how_to_apply": "Apply through Gram Panchayat. Beneficiaries are selected from SECC 2011 data.",
-    "_last_synced": "2026-09-11T09:17:49.314Z"
+    "_last_synced": "2026-09-11T09:17:49.314Z",
+    "tags": [
+      "Housing & Shelter"
+    ]
   },
   {
     "id": "AYUSHMAN-BHARAT",
@@ -237,7 +255,10 @@
     "mutual_exclusions": [],
     "source_url": "https://pmjay.gov.in",
     "how_to_apply": "Check eligibility on mera.pmjay.gov.in or visit nearest Ayushman Bharat Kendra.",
-    "_last_synced": "2026-09-11T09:17:49.314Z"
+    "_last_synced": "2026-09-11T09:17:49.314Z",
+    "tags": [
+      "Healthcare & Medical"
+    ]
   },
   {
     "id": "PM-SCHOLARSHIP",
@@ -276,7 +297,10 @@
     "mutual_exclusions": [],
     "source_url": "https://ksb.gov.in",
     "how_to_apply": "Apply online through the National Scholarship Portal (NSP).",
-    "_last_synced": "2026-09-11T09:17:49.314Z"
+    "_last_synced": "2026-09-11T09:17:49.314Z",
+    "tags": [
+      "Education & Scholarships"
+    ]
   },
   {
     "id": "POST-MATRIC-SC-ST",
@@ -320,7 +344,10 @@
     "mutual_exclusions": [],
     "source_url": "https://scholarships.gov.in",
     "how_to_apply": "Apply through the National Scholarship Portal (NSP) during the application window.",
-    "_last_synced": "2026-09-11T09:17:49.314Z"
+    "_last_synced": "2026-09-11T09:17:49.314Z",
+    "tags": [
+      "Education & Scholarships"
+    ]
   },
   {
     "id": "E-SHRAM",
@@ -360,7 +387,10 @@
     "mutual_exclusions": [],
     "source_url": "https://eshram.gov.in",
     "how_to_apply": "Self-register on eshram.gov.in or visit nearest CSC centre.",
-    "_last_synced": "2026-09-11T09:17:49.314Z"
+    "_last_synced": "2026-09-11T09:17:49.314Z",
+    "tags": [
+      "Pensions & Social Security"
+    ]
   },
   {
     "id": "IGNDPS",
@@ -393,7 +423,11 @@
     "mutual_exclusions": [],
     "source_url": "https://nsap.nic.in",
     "how_to_apply": "Apply through Gram Panchayat or District Social Welfare Officer.",
-    "_last_synced": "2026-09-11T09:17:49.314Z"
+    "_last_synced": "2026-09-11T09:17:49.314Z",
+    "tags": [
+      "Pensions & Social Security",
+      "Healthcare & Medical"
+    ]
   },
   {
     "id": "NFBS",
@@ -427,7 +461,10 @@
     "mutual_exclusions": [],
     "source_url": "https://nsap.nic.in",
     "how_to_apply": "Apply through Gram Panchayat or Block Development Officer with death certificate of breadwinner.",
-    "_last_synced": "2026-09-11T09:17:49.314Z"
+    "_last_synced": "2026-09-11T09:17:49.314Z",
+    "tags": [
+      "Pensions & Social Security"
+    ]
   },
   {
     "id": "STANDUPINDIA",
@@ -445,7 +482,9 @@
       "max_income": null,
       "gender": null,
       "category": null,
-      "occupation": ["Self-Employed"],
+      "occupation": [
+        "Self-Employed"
+      ],
       "education": null,
       "is_disabled": null,
       "states": null
@@ -453,6 +492,9 @@
     "required_documents": [],
     "mutual_exclusions": [],
     "source_url": "https://en.wikipedia.org/wiki/Stand-Up_India",
-    "how_to_apply": "Apply through participating banks or the Stand Up India portal (www.standupmitra.in) with the required documents."
+    "how_to_apply": "Apply through participating banks or the Stand Up India portal (www.standupmitra.in) with the required documents.",
+    "tags": [
+      "Business & Entrepreneurship"
+    ]
   }
 ]
