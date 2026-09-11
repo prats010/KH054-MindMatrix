@@ -10,6 +10,7 @@ JanSahayak is an AI-powered portal that helps Indian citizens discover, evaluate
 ## Features
 
 - **Multi-Agent AI Orchestration:** 5 specialized agents (Coordinator, Eligibility, Conflict, Document, Recommendation) running sequentially and in parallel to evaluate citizen profiles against 12+ Central Government schemes.
+- **Goal-Based Strict Routing:** Citizens can select their primary goals (e.g., Business Funding, Medical Relief). The system uses strict pre-filtering to instantly discard irrelevant schemes, saving LLM tokens and ensuring hyper-relevant recommendations.
 - **Retrieval-Augmented Generation (RAG):** Uses local text embeddings (`all-MiniLM-L6-v2`) to search a vector database of actual government gazettes before making eligibility decisions — reducing LLM hallucinations.
 - **AI-Powered Web Scraper:** A Puppeteer + Groq headless crawler that scrapes any government website or news article and automatically extracts structured scheme data into the database.
 - **Deterministic Document Matching:** Missing-document detection uses pure set-difference logic (not LLM), ensuring 100% accuracy with zero hallucinated requirements.
