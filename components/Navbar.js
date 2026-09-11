@@ -29,9 +29,9 @@ export default function Navbar() {
         </Link>
 
         <div className="nav-links">
-          <Link href="/" className="nav-link">{t("nav.schemes")}</Link>
+          <Link href="/schemes" className="nav-link">{t("nav.schemes")}</Link>
           <Link href="/profile" className="nav-link">{t("nav.eligibility")}</Link>
-          <Link href="#" className="nav-link">{t("nav.grievance")}</Link>
+          <Link href="/grievance" className="nav-link">{t("nav.grievance")}</Link>
           
           <select 
             value={language} 

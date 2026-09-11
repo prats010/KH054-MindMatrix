@@ -21,7 +21,7 @@ export default function HomePage() {
             <Link href="/profile" className="btn-primary">
               {t("hero.cta")}
             </Link>
-            <Link href="#" className="btn-secondary">
+            <Link href="/schemes" className="btn-secondary">
               {t("hero.browse")}
             </Link>
           </div>
