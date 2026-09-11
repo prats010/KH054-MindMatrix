@@ -54,3 +54,20 @@ If you add new markdown files to `data/guidelines/`, you must rebuild the local 
 ```bash
 node scripts/ingest.js
 ```
+
+## Future Scope & Government Integration
+While this MVP uses an AI-powered scraper and a local JSON database, the production architecture is designed to integrate directly with official government infrastructure:
+1. **API Setu Integration:** Transition from the scraper to official Ministry APIs via `apisetu.gov.in` for real-time scheme updates.
+2. **DigiLocker Verification:** Integrate the `Document Agent` with the citizen's actual DigiLocker to auto-verify required documents.
+3. **Multi-lingual Voice Interface:** Expand the current text-based localization to allow illiterate citizens to apply via voice in local dialects using models like Bhashini.
+
+## Deployment (Vercel)
+This Next.js application is fully optimized for serverless deployment on Vercel.
+
+1. Push your repository to GitHub.
+2. Log into [Vercel](https://vercel.com/) and click **Add New Project**.
+3. Import your GitHub repository.
+4. In the Environment Variables section, add your `GROQ_API_KEY`.
+5. Click **Deploy**. Vercel will automatically detect the Next.js framework and deploy your AI pipeline.
+
+*(Note: The local Puppeteer scraper and `scripts/` are intended for local data-ingestion runs, while the Next.js API routes handle the live user traffic on Vercel).*
