@@ -415,7 +415,8 @@
       "occupation": null,
       "education": null,
       "is_disabled": null,
-      "states": null
+      "states": null,
+      "requires_death_cert": true
     },
     "required_documents": [
       "Aadhaar",
@@ -439,12 +440,12 @@
     "benefit_type": "cash",
     "benefit_value": "Loans between ₹10 lakh and ₹1 crore per enterprise",
     "eligibility_rules": {
-      "is_farmer": false,
-      "min_age": null,
+      "is_farmer": null,
+      "min_age": 18,
       "max_income": null,
       "gender": null,
       "category": null,
-      "occupation": "Entrepreneur (setting up greenfield enterprise in manufacturing, trading or services)",
+      "occupation": ["Self-Employed"],
       "education": null,
       "is_disabled": null,
       "states": null
