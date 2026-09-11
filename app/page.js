@@ -1,69 +1,82 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 
-export default function Home() {
+import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import { useLanguage } from "@/lib/i18n";
+
+export default function HomePage() {
+  const { t } = useLanguage();
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.js</code> file.
-          </h1>
+    <>
+      <Navbar />
+      
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="hero-container">
+          <h1>Find Government Schemes You Are Eligible For</h1>
           <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+            An official public welfare discovery portal powered by AI. Check your eligibility across 12+ Central and State welfare programs with zero Aadhaar data storage.
           </p>
+          
+          <div className="hero-actions">
+            <Link href="/profile" className="btn-primary">
+              Check Eligibility Now →
+            </Link>
+            <Link href="#" className="btn-secondary">
+              Browse All Schemes
+            </Link>
+          </div>
+          
+          <div className="trust-badges">
+            <span>✓ 100% Free Public Service</span>
+            <span>✓ No Login Required</span>
+            <span>✓ Screen Reader Friendly</span>
+          </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Info Grid */}
+      <section className="info-section">
+        <div className="info-container">
+          <div className="info-grid">
+            <div className="info-card">
+              <h3>Instant AI Matching</h3>
+              <p>Automated criteria check against age, income, and landholding rules with verified gazette criteria.</p>
+            </div>
+            <div className="info-card">
+              <h3>12+ Verified Schemes</h3>
+              <p>Direct linkage to active Central and State schemes including PM-KISAN, Ayushman Bharat, and scholarships.</p>
+            </div>
+            <div className="info-card">
+              <h3>100% Privacy Preserved</h3>
+              <p>Data stays on your device, zero biometric or PII storage, strictly compliant with DPDP guidelines.</p>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Stats Band */}
+      <section className="stats-band">
+        <div className="stats-grid">
+          <div>
+            <div className="stat-val">₹18K+ Cr</div>
+            <div className="stat-label">Welfare Subsidies Tracked</div>
+          </div>
+          <div>
+            <div className="stat-val">12+</div>
+            <div className="stat-label">Active Central & State Schemes</div>
+          </div>
+          <div>
+            <div className="stat-val">36</div>
+            <div className="stat-label">States & UTs Supported</div>
+          </div>
+          <div>
+            <div className="stat-val">100%</div>
+            <div className="stat-label">Free & Open Access</div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

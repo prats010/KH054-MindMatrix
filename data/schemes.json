@@ -1,0 +1,457 @@
+[
+  {
+    "id": "PM-KISAN",
+    "name": "Pradhan Mantri Kisan Samman Nidhi",
+    "name_hi": "प्रधानमंत्री किसान सम्मान निधि",
+    "name_mr": "प्रधानमंत्री किसान सन्मान निधी",
+    "description": "Direct income support of ₹6,000 per year to eligible farmer families, paid in three equal instalments.",
+    "description_hi": "पात्र किसान परिवारों को प्रति वर्ष ₹6,000 की प्रत्यक्ष आय सहायता, तीन समान किस्तों में।",
+    "description_mr": "पात्र शेतकरी कुटुंबांना दरवर्षी ₹6,000 थेट उत्पन्न सहाय्य, तीन समान हप्त्यांमध्ये.",
+    "benefit_type": "cash",
+    "benefit_value": "₹6,000/year",
+    "eligibility_rules": {
+      "is_farmer": true,
+      "min_age": 18,
+      "max_income": null,
+      "gender": null,
+      "category": null,
+      "occupation": [
+        "Farmer"
+      ],
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount",
+      "LandProof"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://pmkisan.gov.in",
+    "how_to_apply": "Register on the PM-KISAN portal or visit your nearest CSC centre.",
+    "_last_synced": "2026-09-11T09:17:49.313Z"
+  },
+  {
+    "id": "PMUY",
+    "name": "Pradhan Mantri Ujjwala Yojana",
+    "name_hi": "प्रधानमंत्री उज्ज्वला योजना",
+    "name_mr": "प्रधानमंत्री उज्ज्वला योजना",
+    "description": "Free LPG connection to women from BPL households to replace unclean cooking fuels.",
+    "description_hi": "गरीबी रेखा से नीचे (BPL) परिवारों की महिलाओं को मुफ्त LPG कनेक्शन।",
+    "description_mr": "दारिद्र्यरेषेखालील (BPL) कुटुंबातील महिलांना मोफत LPG कनेक्शन.",
+    "benefit_type": "service",
+    "benefit_value": "Free LPG connection + ₹1,600 subsidy",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_income": 100000,
+      "gender": "Female",
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount",
+      "BPLCard",
+      "RationCard"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://pmuy.gov.in",
+    "how_to_apply": "Apply at the nearest LPG distributor with KYC documents.",
+    "_last_synced": "2026-09-11T09:17:49.314Z"
+  },
+  {
+    "id": "PM-SYM",
+    "name": "Pradhan Mantri Shram Yogi Maan-dhan",
+    "name_hi": "प्रधानमंत्री श्रम योगी मान-धन",
+    "name_mr": "प्रधानमंत्री श्रम योगी मान-धन",
+    "description": "Voluntary pension scheme for unorganised workers. Provides ₹3,000/month pension after age 60.",
+    "description_hi": "असंगठित क्षेत्र के कामगारों के लिए स्वैच्छिक पेंशन योजना। 60 वर्ष की आयु के बाद ₹3,000/माह पेंशन।",
+    "description_mr": "असंघटित क्षेत्रातील कामगारांसाठी ऐच्छिक पेन्शन योजना. वयाच्या 60 वर्षांनंतर ₹3,000/महिना पेन्शन.",
+    "benefit_type": "pension",
+    "benefit_value": "₹3,000/month after age 60",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_age": 40,
+      "max_income": 180000,
+      "gender": null,
+      "category": null,
+      "occupation": [
+        "Farmer",
+        "Labourer",
+        "Domestic Worker",
+        "Street Vendor",
+        "Self-Employed",
+        "Rickshaw Puller",
+        "Construction Worker"
+      ],
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount",
+      "IncomeCert"
+    ],
+    "mutual_exclusions": [
+      "NSAP",
+      "APY"
+    ],
+    "source_url": "https://maandhan.in",
+    "how_to_apply": "Visit nearest CSC or register on maandhan.in portal.",
+    "_last_synced": "2026-09-11T09:17:49.314Z"
+  },
+  {
+    "id": "NSAP",
+    "name": "National Social Assistance Programme (Old Age Pension)",
+    "name_hi": "राष्ट्रीय सामाजिक सहायता कार्यक्रम (वृद्धावस्था पेंशन)",
+    "name_mr": "राष्ट्रीय सामाजिक सहाय्य कार्यक्रम (वृद्धापकाळ पेन्शन)",
+    "description": "Monthly pension of ₹200-₹500 for BPL citizens aged 60 and above.",
+    "description_hi": "60 वर्ष और अधिक आयु के BPL नागरिकों को ₹200-₹500 मासिक पेंशन।",
+    "description_mr": "60 वर्षे आणि त्यावरील BPL नागरिकांना ₹200-₹500 मासिक पेन्शन.",
+    "benefit_type": "pension",
+    "benefit_value": "₹200-₹500/month",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 60,
+      "max_income": 100000,
+      "gender": null,
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount",
+      "BPLCard",
+      "AgeCert"
+    ],
+    "mutual_exclusions": [
+      "PM-SYM",
+      "APY"
+    ],
+    "source_url": "https://nsap.nic.in",
+    "how_to_apply": "Apply through your Gram Panchayat or Block Development Officer.",
+    "_last_synced": "2026-09-11T09:17:49.314Z"
+  },
+  {
+    "id": "APY",
+    "name": "Atal Pension Yojana",
+    "name_hi": "अटल पेंशन योजना",
+    "name_mr": "अटल पेन्शन योजना",
+    "description": "Government-backed pension scheme providing fixed pension of ₹1,000-₹5,000/month after age 60 based on contribution.",
+    "description_hi": "सरकार समर्थित पेंशन योजना, योगदान के अनुसार 60 वर्ष की आयु के बाद ₹1,000-₹5,000/माह पेंशन।",
+    "description_mr": "सरकार समर्थित पेन्शन योजना, योगदानानुसार 60 वर्षांनंतर ₹1,000-₹5,000/महिना पेन्शन.",
+    "benefit_type": "pension",
+    "benefit_value": "₹1,000-₹5,000/month after age 60",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_age": 40,
+      "max_income": null,
+      "gender": null,
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount"
+    ],
+    "mutual_exclusions": [
+      "PM-SYM",
+      "NSAP"
+    ],
+    "source_url": "https://npscra.nsdl.co.in/scheme-details.php",
+    "how_to_apply": "Open APY account at any bank branch or via net banking.",
+    "_last_synced": "2026-09-11T09:17:49.314Z"
+  },
+  {
+    "id": "PMAY-G",
+    "name": "Pradhan Mantri Awas Yojana – Gramin",
+    "name_hi": "प्रधानमंत्री आवास योजना – ग्रामीण",
+    "name_mr": "प्रधानमंत्री आवास योजना – ग्रामीण",
+    "description": "Financial assistance of ₹1.20-₹1.30 lakh for construction of pucca houses in rural areas for homeless and those living in kutcha/dilapidated houses.",
+    "description_hi": "ग्रामीण क्षेत्रों में बेघर और कच्चे/जर्जर मकानों में रहने वालों को पक्का मकान बनाने के लिए ₹1.20-₹1.30 लाख की वित्तीय सहायता।",
+    "description_mr": "ग्रामीण भागात बेघर आणि कच्च्या/मोडकळीस आलेल्या घरांमध्ये राहणाऱ्यांना पक्के घर बांधण्यासाठी ₹1.20-₹1.30 लाख आर्थिक सहाय्य.",
+    "benefit_type": "cash",
+    "benefit_value": "₹1.20-₹1.30 lakh",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_income": 150000,
+      "gender": null,
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount",
+      "IncomeCert",
+      "LandProof"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://pmayg.nic.in",
+    "how_to_apply": "Apply through Gram Panchayat. Beneficiaries are selected from SECC 2011 data.",
+    "_last_synced": "2026-09-11T09:17:49.314Z"
+  },
+  {
+    "id": "AYUSHMAN-BHARAT",
+    "name": "Ayushman Bharat – Pradhan Mantri Jan Arogya Yojana",
+    "name_hi": "आयुष्मान भारत – प्रधानमंत्री जन आरोग्य योजना",
+    "name_mr": "आयुष्मान भारत – प्रधानमंत्री जन आरोग्य योजना",
+    "description": "Health insurance of ₹5 lakh per family per year for secondary and tertiary hospitalisation. Covers pre and post-hospitalisation expenses.",
+    "description_hi": "माध्यमिक और तृतीयक अस्पताल में भर्ती के लिए प्रति परिवार प्रति वर्ष ₹5 लाख का स्वास्थ्य बीमा।",
+    "description_mr": "दुय्यम आणि तृतीयक रुग्णालयात भरतीसाठी प्रति कुटुंब प्रतिवर्षी ₹5 लाख आरोग्य विमा.",
+    "benefit_type": "insurance",
+    "benefit_value": "₹5 lakh/year health cover",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": null,
+      "max_income": 300000,
+      "gender": null,
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "RationCard",
+      "IncomeCert"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://pmjay.gov.in",
+    "how_to_apply": "Check eligibility on mera.pmjay.gov.in or visit nearest Ayushman Bharat Kendra.",
+    "_last_synced": "2026-09-11T09:17:49.314Z"
+  },
+  {
+    "id": "PM-SCHOLARSHIP",
+    "name": "Prime Minister's Scholarship Scheme",
+    "name_hi": "प्रधानमंत्री छात्रवृत्ति योजना",
+    "name_mr": "प्रधानमंत्री शिष्यवृत्ती योजना",
+    "description": "Scholarship for wards/widows of ex-servicemen and ex-Coast Guard personnel for professional/technical education. ₹3,000/month for boys, ₹3,600/month for girls.",
+    "description_hi": "पूर्व सैनिकों और पूर्व तटरक्षक कर्मियों के वार्डों/विधवाओं के लिए व्यावसायिक/तकनीकी शिक्षा हेतु छात्रवृत्ति।",
+    "description_mr": "माजी सैनिक आणि माजी तटरक्षक कर्मचाऱ्यांच्या पाल्यांना/विधवांना व्यावसायिक/तांत्रिक शिक्षणासाठी शिष्यवृत्ती.",
+    "benefit_type": "scholarship",
+    "benefit_value": "₹3,000-₹3,600/month",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_age": 25,
+      "max_income": null,
+      "gender": null,
+      "category": null,
+      "occupation": [
+        "Student"
+      ],
+      "education": [
+        "UG",
+        "PG",
+        "Professional"
+      ],
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount",
+      "CollegeID",
+      "ExServiceCert"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://ksb.gov.in",
+    "how_to_apply": "Apply online through the National Scholarship Portal (NSP).",
+    "_last_synced": "2026-09-11T09:17:49.314Z"
+  },
+  {
+    "id": "POST-MATRIC-SC-ST",
+    "name": "Post-Matric Scholarship for SC/ST Students",
+    "name_hi": "अनुसूचित जाति/जनजाति छात्रों के लिए पोस्ट-मैट्रिक छात्रवृत्ति",
+    "name_mr": "अनुसूचित जाती/जमाती विद्यार्थ्यांसाठी मॅट्रिकोत्तर शिष्यवृत्ती",
+    "description": "Scholarship covering tuition fees, maintenance allowance, and other costs for SC/ST students pursuing post-matriculation courses.",
+    "description_hi": "पोस्ट-मैट्रिक पाठ्यक्रमों में पढ़ने वाले SC/ST छात्रों के लिए ट्यूशन फीस, रखरखाव भत्ता आदि शामिल।",
+    "description_mr": "मॅट्रिकोत्तर अभ्यासक्रम करणाऱ्या SC/ST विद्यार्थ्यांसाठी शिक्षण शुल्क, देखभाल भत्ता इत्यादी.",
+    "benefit_type": "scholarship",
+    "benefit_value": "Full tuition + maintenance allowance",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": null,
+      "max_income": 250000,
+      "gender": null,
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "occupation": [
+        "Student"
+      ],
+      "education": [
+        "Secondary",
+        "Higher Secondary",
+        "UG",
+        "PG",
+        "Professional"
+      ],
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount",
+      "IncomeCert",
+      "CasteCert",
+      "CollegeID"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://scholarships.gov.in",
+    "how_to_apply": "Apply through the National Scholarship Portal (NSP) during the application window.",
+    "_last_synced": "2026-09-11T09:17:49.314Z"
+  },
+  {
+    "id": "E-SHRAM",
+    "name": "e-Shram Card (Unorganised Workers)",
+    "name_hi": "ई-श्रम कार्ड (असंगठित कामगार)",
+    "name_mr": "ई-श्रम कार्ड (असंघटित कामगार)",
+    "description": "National database registration for unorganised workers. Provides ₹2 lakh accidental insurance and access to various welfare schemes.",
+    "description_hi": "असंगठित क्षेत्र के कामगारों के लिए राष्ट्रीय डेटाबेस पंजीकरण। ₹2 लाख दुर्घटना बीमा और विभिन्न कल्याण योजनाओं तक पहुंच।",
+    "description_mr": "असंघटित क्षेत्रातील कामगारांसाठी राष्ट्रीय डेटाबेस नोंदणी. ₹2 लाख अपघात विमा आणि विविध कल्याणकारी योजनांमध्ये प्रवेश.",
+    "benefit_type": "insurance",
+    "benefit_value": "₹2 lakh accidental insurance + scheme access",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 16,
+      "max_age": 59,
+      "max_income": 180000,
+      "gender": null,
+      "category": null,
+      "occupation": [
+        "Farmer",
+        "Labourer",
+        "Domestic Worker",
+        "Street Vendor",
+        "Self-Employed",
+        "Rickshaw Puller",
+        "Construction Worker",
+        "Fisherman"
+      ],
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://eshram.gov.in",
+    "how_to_apply": "Self-register on eshram.gov.in or visit nearest CSC centre.",
+    "_last_synced": "2026-09-11T09:17:49.314Z"
+  },
+  {
+    "id": "IGNDPS",
+    "name": "Indira Gandhi National Disability Pension Scheme",
+    "name_hi": "इंदिरा गांधी राष्ट्रीय विकलांगता पेंशन योजना",
+    "name_mr": "इंदिरा गांधी राष्ट्रीय अपंगत्व पेन्शन योजना",
+    "description": "Monthly pension of ₹300 for persons with severe/multiple disabilities (80%+) aged 18-79 from BPL households.",
+    "description_hi": "BPL परिवारों से 18-79 वर्ष आयु के गंभीर/बहु-विकलांग (80%+) व्यक्तियों के लिए ₹300 मासिक पेंशन।",
+    "description_mr": "BPL कुटुंबातील 18-79 वर्षे वयोगटातील गंभीर/बहु-अपंगत्व (80%+) असलेल्या व्यक्तींना ₹300 मासिक पेन्शन.",
+    "benefit_type": "pension",
+    "benefit_value": "₹300/month",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_age": 79,
+      "max_income": 100000,
+      "gender": null,
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": true,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount",
+      "BPLCard",
+      "DisabilityCert"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://nsap.nic.in",
+    "how_to_apply": "Apply through Gram Panchayat or District Social Welfare Officer.",
+    "_last_synced": "2026-09-11T09:17:49.314Z"
+  },
+  {
+    "id": "NFBS",
+    "name": "National Family Benefit Scheme",
+    "name_hi": "राष्ट्रीय परिवार लाभ योजना",
+    "name_mr": "राष्ट्रीय कुटुंब लाभ योजना",
+    "description": "One-time grant of ₹20,000 to BPL households on the death of the primary breadwinner (aged 18-60).",
+    "description_hi": "प्राथमिक कमाने वाले (18-60 वर्ष) की मृत्यु पर BPL परिवारों को ₹20,000 की एकमुश्त सहायता।",
+    "description_mr": "प्राथमिक कमावत्या (18-60 वर्षे) व्यक्तीच्या मृत्यूवर BPL कुटुंबांना ₹20,000 ची एकवेळ सहाय्य.",
+    "benefit_type": "cash",
+    "benefit_value": "₹20,000 one-time",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_age": 60,
+      "max_income": 100000,
+      "gender": null,
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount",
+      "BPLCard",
+      "DeathCert"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://nsap.nic.in",
+    "how_to_apply": "Apply through Gram Panchayat or Block Development Officer with death certificate of breadwinner.",
+    "_last_synced": "2026-09-11T09:17:49.314Z"
+  },
+  {
+    "id": "STANDUPINDIA",
+    "name": "Stand-Up India",
+    "name_hi": "स्टैंड‑अप इंडिया",
+    "name_mr": "स्टँड‑अप इंडिया",
+    "description": "Stand-Up India is a government initiative launched in 2016 to promote entrepreneurship among women and Scheduled Caste (SC) and Scheduled Tribe (ST) communities by providing bank loans for setting up greenfield enterprises in manufacturing, trading or services.",
+    "description_hi": "स्टैंड‑अप इंडिया एक सरकारी पहल है जो 2016 में महिलाओं तथा अनुसूचित जाति (एससी) और अनुसूचित जनजाति (एसटी) समुदायों में उद्यमिता को बढ़ावा देने के लिए बैंक ऋण प्रदान करती है, जिससे वे निर्माण, व्यापार या सेवा क्षेत्र में ग्रीनफ़ील्ड उद्यम स्थापित कर सकें।",
+    "description_mr": "स्टँड‑अप इंडिया ही 2016 मध्ये सुरू केलेली सरकारी योजना आहे, जी महिलां आणि अनुसूचित जाति (SC) व अनुसूचित जनजाति (ST) समुदायांमधील उद्योजकतेला प्रोत्साहन देते, आणि उत्पादन, व्यापार किंवा सेवा क्षेत्रातील ग्रीनफिल्ड एंटरप्राइझ सुरू करण्यासाठी बँक कर्जे उपलब्ध करून देते.",
+    "benefit_type": "cash",
+    "benefit_value": "Loans between ₹10 lakh and ₹1 crore per enterprise",
+    "eligibility_rules": {
+      "is_farmer": false,
+      "min_age": null,
+      "max_income": null,
+      "gender": null,
+      "category": null,
+      "occupation": "Entrepreneur (setting up greenfield enterprise in manufacturing, trading or services)",
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [],
+    "mutual_exclusions": [],
+    "source_url": "https://en.wikipedia.org/wiki/Stand-Up_India",
+    "how_to_apply": "Apply through participating banks or the Stand Up India portal (www.standupmitra.in) with the required documents."
+  }
+]
