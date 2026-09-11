@@ -48,8 +48,6 @@ export default function Navbar() {
               <option key={code} value={code} style={{color: '#000'}}>{name}</option>
             ))}
           </select>
-
-          <Link href="#" className="nav-link btn-login">{t("nav.login")}</Link>
         </div>
       </nav>
     </header>
