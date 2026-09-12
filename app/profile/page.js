@@ -31,7 +31,9 @@ const CATEGORIES = ["General", "SC", "ST", "OBC", "EWS"];
 const DOCUMENTS = [
   "Aadhaar", "BankAccount", "LandProof", "IncomeCert",
   "BPLCard", "RationCard", "CasteCert", "CollegeID",
-  "AgeCert", "DisabilityCert", "ExServiceCert", "DeathCert"
+  "AgeCert", "DisabilityCert", "ExServiceCert", "DeathCert",
+  "BirthCert", "MCHCard", "AddressProof", "PANCard",
+  "BusinessProof", "EducationCert", "ProjectReport"
 ];
 
 const GOALS = [
@@ -40,7 +42,9 @@ const GOALS = [
   "Healthcare & Medical",
   "Education & Scholarships",
   "Housing & Shelter",
-  "Pensions & Social Security"
+  "Pensions & Social Security",
+  "Women & Children",
+  "Financial Services"
 ];
 
 export default function ProfilePage() {

@@ -741,5 +741,189 @@
       "Pensions & Social Security",
       "Financial Services"
     ]
+  },
+  {
+    "id": "SMILE",
+    "name": "Support for Marginalized Individuals for Livelihood and Enterprise (SMILE)",
+    "name_hi": "आजीविका और उद्यम के लिए हाशिए के व्यक्तियों का समर्थन (SMILE)",
+    "name_mr": "उपजीविका आणि उद्यमासाठी उपेक्षित व्यक्तींना समर्थन (SMILE)",
+    "description": "Comprehensive rehabilitation scheme for Transgender persons including scholarships, skill development, and medical care.",
+    "description_hi": "ट्रांसजेंडर व्यक्तियों के लिए छात्रवृत्ति, कौशल विकास और चिकित्सा देखभाल सहित व्यापक पुनर्वास योजना।",
+    "description_mr": "ट्रान्सजेंडर व्यक्तींसाठी शिष्यवृत्ती, कौशल्य विकास आणि वैद्यकीय सेवेसह सर्वसमावेशक पुनर्वसन योजना.",
+    "benefit_type": "cash",
+    "benefit_value": "Varies (Scholarship, Medical Cover, Skill Training)",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_income": null,
+      "gender": "Other",
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://socialjustice.gov.in/schemes/smile",
+    "how_to_apply": "Apply through the National Portal for Transgender Persons.",
+    "tags": [
+      "Education & Scholarships",
+      "Healthcare & Medical"
+    ]
+  },
+  {
+    "id": "JSY",
+    "name": "Janani Suraksha Yojana",
+    "name_hi": "जननी सुरक्षा योजना",
+    "name_mr": "जननी सुरक्षा योजना",
+    "description": "Safe motherhood intervention for pregnant women to reduce maternal and neonatal mortality by promoting institutional delivery.",
+    "description_hi": "संस्थागत प्रसव को बढ़ावा देकर मातृ और नवजात मृत्यु दर को कम करने के लिए गर्भवती महिलाओं के लिए सुरक्षित मातृत्व हस्तक्षेप।",
+    "description_mr": "संस्थागत प्रसूतीला प्रोत्साहन देऊन माता आणि नवजात मृत्यू दर कमी करण्यासाठी गर्भवती महिलांसाठी सुरक्षित मातृत्व हस्तक्षेप.",
+    "benefit_type": "cash",
+    "benefit_value": "Up to ₹1,400 for rural areas",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 19,
+      "max_income": null,
+      "gender": "Female",
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "MCHCard",
+      "BankAccount"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://nhm.gov.in/index1.php?lang=1&level=3&sublinkid=841&lid=309",
+    "how_to_apply": "Register with the local ASHA worker or Anganwadi Centre.",
+    "tags": [
+      "Healthcare & Medical",
+      "Women & Children"
+    ]
+  },
+  {
+    "id": "PM-VISHWAKARMA",
+    "name": "PM Vishwakarma Yojana",
+    "name_hi": "पीएम विश्वकर्मा योजना",
+    "name_mr": "पीएम विश्वकर्मा योजना",
+    "description": "End-to-end support for traditional artisans and craftspeople including toolkit incentive, skill training, and collateral-free credit.",
+    "description_hi": "पारंपरिक कारीगरों और शिल्पकारों के लिए टूलकिट प्रोत्साहन, कौशल प्रशिक्षण और संपार्श्विक-मुक्त ऋण सहित एंड-टू-एंड समर्थन।",
+    "description_mr": "पारंपारिक कारागीर आणि शिल्पकारांसाठी टूलकिट प्रोत्साहन, कौशल्य प्रशिक्षण आणि तारण-मुक्त कर्जासह संपूर्ण समर्थन.",
+    "benefit_type": "loan",
+    "benefit_value": "Collateral-free credit up to ₹3 Lakhs",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_income": null,
+      "gender": null,
+      "category": null,
+      "occupation": [
+        "Self-Employed",
+        "Labourer",
+        "Other"
+      ],
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount",
+      "BusinessProof"
+    ],
+    "mutual_exclusions": [
+      "PMEGP",
+      "PMMY"
+    ],
+    "source_url": "https://pmvishwakarma.gov.in/",
+    "how_to_apply": "Apply through the PM Vishwakarma portal or via CSC centers.",
+    "tags": [
+      "Business & Entrepreneurship",
+      "Financial Services"
+    ]
+  },
+  {
+    "id": "NAYA-SAVERA",
+    "name": "Naya Savera Scheme",
+    "name_hi": "नया सवेरा योजना",
+    "name_mr": "नया सवेरा योजना",
+    "description": "Free coaching and allied scheme for candidates belonging to minority communities to prepare for competitive examinations.",
+    "description_hi": "प्रतियोगी परीक्षाओं की तैयारी के लिए अल्पसंख्यक समुदायों के उम्मीदवारों के लिए मुफ्त कोचिंग और संबद्ध योजना।",
+    "description_mr": "स्पर्धा परीक्षांच्या तयारीसाठी अल्पसंख्याक समुदायातील उमेदवारांसाठी मोफत कोचिंग आणि संलग्न योजना.",
+    "benefit_type": "scholarship",
+    "benefit_value": "Free coaching + stipend",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_income": 600000,
+      "gender": null,
+      "category": null,
+      "occupation": [
+        "Student"
+      ],
+      "education": [
+        "Higher Secondary",
+        "UG"
+      ],
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "IncomeCert",
+      "CasteCert",
+      "EducationCert"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://minorityaffairs.gov.in/en/naya-savera-scheme",
+    "how_to_apply": "Apply through designated coaching institutes empaneled under the scheme.",
+    "tags": [
+      "Education & Scholarships"
+    ]
+  },
+  {
+    "id": "GKRA",
+    "name": "Garib Kalyan Rojgar Abhiyaan",
+    "name_hi": "गरीब कल्याण रोजगार अभियान",
+    "name_mr": "गरीब कल्याण रोजगार अभियान",
+    "description": "Employment generation and infrastructure creation scheme aimed at providing livelihood opportunities to returnee migrant workers.",
+    "description_hi": "वापस लौटने वाले प्रवासी श्रमिकों को आजीविका के अवसर प्रदान करने के उद्देश्य से रोजगार सृजन और बुनियादी ढांचा निर्माण योजना।",
+    "description_mr": "परतणाऱ्या स्थलांतरित कामगारांना उपजीविकेच्या संधी उपलब्ध करून देण्याच्या उद्देशाने रोजगार निर्मिती आणि पायाभूत सुविधा निर्माण योजना.",
+    "benefit_type": "employment",
+    "benefit_value": "125 days of guaranteed employment",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_income": null,
+      "gender": null,
+      "category": null,
+      "occupation": [
+        "Labourer",
+        "Unemployed"
+      ],
+      "education": null,
+      "is_disabled": null,
+      "states": [
+        "Bihar", "Uttar Pradesh", "Madhya Pradesh", "Rajasthan", "Jharkhand", "Odisha"
+      ]
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://rural.nic.in/en",
+    "how_to_apply": "Register at the Gram Panchayat for a job card and apply for work.",
+    "tags": [
+      "Business & Entrepreneurship"
+    ]
   }
 ]
