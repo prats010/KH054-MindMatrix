@@ -496,5 +496,250 @@
     "tags": [
       "Business & Entrepreneurship"
     ]
+  },
+  {
+    "id": "PMMVY",
+    "name": "Pradhan Mantri Matru Vandana Yojana",
+    "name_hi": "प्रधानमंत्री मातृ वंदना योजना",
+    "name_mr": "प्रधानमंत्री मातृ वंदना योजना",
+    "description": "Maternity benefit scheme of ₹5,000 for pregnant women and lactating mothers for the first living child.",
+    "description_hi": "गर्भवती महिलाओं और स्तनपान कराने वाली माताओं के लिए पहले जीवित बच्चे के लिए ₹5,000 की मातृत्व लाभ योजना।",
+    "description_mr": "गर्भवती महिला आणि स्तनदा मातांसाठी पहिल्या जिवंत अपत्यासाठी ₹5,000 ची मातृत्व लाभ योजना.",
+    "benefit_type": "cash",
+    "benefit_value": "₹5,000",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 19,
+      "max_income": null,
+      "gender": "Female",
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BankAccount",
+      "MCHCard"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://pmmvy.wcd.gov.in/",
+    "how_to_apply": "Apply through the Anganwadi Centre or online via the PMMVY portal.",
+    "tags": [
+      "Healthcare & Medical",
+      "Women & Children"
+    ]
+  },
+  {
+    "id": "SSY",
+    "name": "Sukanya Samriddhi Yojana",
+    "name_hi": "सुकन्या समृद्धि योजना",
+    "name_mr": "सुकन्या समृद्धी योजना",
+    "description": "Small deposit scheme for the girl child to meet her education and marriage expenses.",
+    "description_hi": "बालिका की शिक्षा और विवाह के खर्चों को पूरा करने के लिए छोटी जमा योजना।",
+    "description_mr": "मुलीचे शिक्षण आणि लग्नाचा खर्च भागवण्यासाठी छोटी ठेव योजना.",
+    "benefit_type": "investment",
+    "benefit_value": "High-interest savings account",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 0,
+      "max_age": 10,
+      "max_income": null,
+      "gender": "Female",
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "BirthCert",
+      "Aadhaar",
+      "AddressProof"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=89",
+    "how_to_apply": "Open an account at any post office or authorized commercial bank branch.",
+    "tags": [
+      "Financial Services",
+      "Women & Children"
+    ]
+  },
+  {
+    "id": "MSSC",
+    "name": "Mahila Samman Savings Certificate",
+    "name_hi": "महिला सम्मान बचत पत्र",
+    "name_mr": "महिला सन्मान बचत प्रमाणपत्र",
+    "description": "Small savings scheme for women and girls offering attractive interest rates for a 2-year period.",
+    "description_hi": "महिलाओं और लड़कियों के लिए 2 वर्ष की अवधि के लिए आकर्षक ब्याज दरों वाली छोटी बचत योजना।",
+    "description_mr": "महिला आणि मुलींसाठी 2 वर्षांच्या कालावधीसाठी आकर्षक व्याजदर देणारी छोटी बचत योजना.",
+    "benefit_type": "investment",
+    "benefit_value": "7.5% fixed interest rate",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 0,
+      "max_income": null,
+      "gender": "Female",
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "PANCard"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://www.indiapost.gov.in/Financial/pages/content/post-office-saving-schemes.aspx",
+    "how_to_apply": "Apply at the post office or participating banks.",
+    "tags": [
+      "Financial Services",
+      "Women & Children"
+    ]
+  },
+  {
+    "id": "PMMY",
+    "name": "Pradhan Mantri MUDRA Yojana",
+    "name_hi": "प्रधानमंत्री मुद्रा योजना",
+    "name_mr": "प्रधानमंत्री मुद्रा योजना",
+    "description": "Collateral-free loans up to ₹10 Lakhs for non-corporate, non-farm small/micro enterprises.",
+    "description_hi": "गैर-कॉर्पोरेट, गैर-कृषि छोटे/सूक्ष्म उद्यमों के लिए ₹10 लाख तक का संपार्श्विक-मुक्त ऋण।",
+    "description_mr": "बिगर-कॉर्पोरेट, बिगर-कृषी छोटे/सूक्ष्म उद्योगांसाठी ₹10 लाखांपर्यंत तारणमुक्त कर्ज.",
+    "benefit_type": "loan",
+    "benefit_value": "Loan up to ₹10 lakh",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_income": null,
+      "gender": null,
+      "category": null,
+      "occupation": [
+        "Self-Employed",
+        "Business Owner"
+      ],
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "BusinessProof",
+      "BankAccount"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://www.mudra.org.in/",
+    "how_to_apply": "Apply online via Udyamimitra portal or visit any authorized bank.",
+    "tags": [
+      "Business & Entrepreneurship",
+      "Financial Services"
+    ]
+  },
+  {
+    "id": "PMEGP",
+    "name": "Prime Minister's Employment Generation Programme",
+    "name_hi": "प्रधानमंत्री रोजगार सृजन कार्यक्रम",
+    "name_mr": "पंतप्रधान रोजगार निर्मिती कार्यक्रम",
+    "description": "Credit-linked subsidy program for generating employment through micro-enterprises in rural and urban areas.",
+    "description_hi": "ग्रामीण और शहरी क्षेत्रों में सूक्ष्म उद्यमों के माध्यम से रोजगार पैदा करने के लिए क्रेडिट-लिंक्ड सब्सिडी कार्यक्रम।",
+    "description_mr": "ग्रामीण आणि शहरी भागात सूक्ष्म उद्योगांच्या माध्यमातून रोजगार निर्मितीसाठी क्रेडिट-लिंक्ड सबसिडी कार्यक्रम.",
+    "benefit_type": "loan_subsidy",
+    "benefit_value": "Subsidy of 15% to 35% on project cost",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 18,
+      "max_income": null,
+      "gender": null,
+      "category": null,
+      "occupation": [
+        "Self-Employed",
+        "Unemployed"
+      ],
+      "education": [
+        "8th Pass"
+      ],
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "EducationCert",
+      "ProjectReport"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp",
+    "how_to_apply": "Apply online at the PMEGP e-portal and submit the hard copy to the respective nodal agency.",
+    "tags": [
+      "Business & Entrepreneurship"
+    ]
+  },
+  {
+    "id": "PMVVY",
+    "name": "Pradhan Mantri Vaya Vandana Yojana",
+    "name_hi": "प्रधानमंत्री वय वंदना योजना",
+    "name_mr": "प्रधानमंत्री वय वंदना योजना",
+    "description": "Pension scheme exclusively for senior citizens aged 60 years and above providing an assured return.",
+    "description_hi": "विशेष रूप से 60 वर्ष और उससे अधिक आयु के वरिष्ठ नागरिकों के लिए सुनिश्चित रिटर्न प्रदान करने वाली पेंशन योजना।",
+    "description_mr": "विशेषत: 60 वर्षे आणि त्यावरील ज्येष्ठ नागरिकांसाठी निश्चित परतावा देणारी पेन्शन योजना.",
+    "benefit_type": "pension",
+    "benefit_value": "Assured pension of 7.4% p.a.",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 60,
+      "max_income": null,
+      "gender": null,
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "AgeCert",
+      "BankAccount"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://licindia.in/",
+    "how_to_apply": "Apply through LIC of India, either online or offline.",
+    "tags": [
+      "Pensions & Social Security",
+      "Financial Services"
+    ]
+  },
+  {
+    "id": "SCSS",
+    "name": "Senior Citizen Savings Scheme",
+    "name_hi": "वरिष्ठ नागरिक बचत योजना",
+    "name_mr": "ज्येष्ठ नागरिक बचत योजना",
+    "description": "A government-backed savings instrument offering regular income to Indian residents aged over 60 years.",
+    "description_hi": "60 वर्ष से अधिक आयु के भारतीय निवासियों को नियमित आय प्रदान करने वाला एक सरकार समर्थित बचत साधन।",
+    "description_mr": "60 वर्षांवरील भारतीय रहिवाशांना नियमित उत्पन्न देणारे सरकारी-समर्थित बचत साधन.",
+    "benefit_type": "investment",
+    "benefit_value": "High quarterly interest (up to 8.2%)",
+    "eligibility_rules": {
+      "is_farmer": null,
+      "min_age": 60,
+      "max_income": null,
+      "gender": null,
+      "category": null,
+      "occupation": null,
+      "education": null,
+      "is_disabled": null,
+      "states": null
+    },
+    "required_documents": [
+      "Aadhaar",
+      "PANCard",
+      "AgeCert"
+    ],
+    "mutual_exclusions": [],
+    "source_url": "https://www.indiapost.gov.in/Financial/pages/content/post-office-saving-schemes.aspx",
+    "how_to_apply": "Open an account at any designated post office or bank branch.",
+    "tags": [
+      "Pensions & Social Security",
+      "Financial Services"
+    ]
   }
 ]

@@ -3,6 +3,8 @@
 **Autonomous Scheme-Bundle Optimizer for Citizens**  
 *Built for PS16 — Kurukshetra Hackathon | Team KH054-MindMatrix*
 
+🌐 **Live Demo:** [https://kh-054-mind-matrix.vercel.app/](https://kh-054-mind-matrix.vercel.app/)
+
 JanSahayak is an AI-powered portal that helps Indian citizens discover, evaluate, and apply for government welfare schemes. It replaces confusing eligibility requirements and dense government gazettes with a simple, localized questionnaire and an advanced Multi-Agent LLM pipeline.
 
 ---
