@@ -100,6 +100,10 @@ export default function ProfilePage() {
     }
     if (step === 1) {
       if (!profile.occupation) newErrors.occupation = true;
+      if (!profile.education) newErrors.education = true;
+    }
+    if (step === 2) {
+      if (!profile.category) newErrors.category = true;
     }
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -253,7 +257,7 @@ function StepPersonal({ profile, updateField, toggleGoal, errors, t }) {
       </div>
 
       <div className="form-group">
-        <label className="form-label">{t("form.gender")} {errors.gender && <span style={{color: 'red'}}>*</span>}</label>
+        <label className="form-label">{t("form.gender")} <span style={{color: 'red'}}>*</span></label>
         <div className="radio-group">
           {[
             { value: "Male", label: t("form.male") },
@@ -274,7 +278,7 @@ function StepPersonal({ profile, updateField, toggleGoal, errors, t }) {
       </div>
 
       <div className="form-group">
-        <label className="form-label">{t("form.state")} {errors.state && <span style={{color: 'red'}}>*</span>}</label>
+        <label className="form-label">{t("form.state")} <span style={{color: 'red'}}>*</span></label>
         <select
           className="form-select"
           value={profile.state}
@@ -316,7 +320,7 @@ function StepEconomic({ profile, updateField, errors, t }) {
       </div>
 
       <div className="form-group">
-        <label className="form-label">{t("form.occupation")} {errors.occupation && <span style={{color: 'red'}}>*</span>}</label>
+        <label className="form-label">{t("form.occupation")} <span style={{color: 'red'}}>*</span></label>
         <select
           className="form-select"
           value={profile.occupation}
@@ -330,7 +334,7 @@ function StepEconomic({ profile, updateField, errors, t }) {
       </div>
 
       <div className="form-group">
-        <label className="form-label">{t("form.education")}</label>
+        <label className="form-label">{t("form.education")} <span style={{color: 'red'}}>*</span></label>
         <select
           className="form-select"
           value={profile.education}
@@ -350,7 +354,7 @@ function StepCategory({ profile, updateField, t }) {
   return (
     <>
       <div className="form-group">
-        <label className="form-label">{t("form.category")}</label>
+        <label className="form-label">{t("form.category")} <span style={{color: 'red'}}>*</span></label>
         <select
           className="form-select"
           value={profile.category}
