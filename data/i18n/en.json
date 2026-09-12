@@ -65,7 +65,14 @@
     "AgeCert": "Age Certificate",
     "DisabilityCert": "Disability Certificate",
     "ExServiceCert": "Ex-Serviceman Certificate",
-    "DeathCert": "Death Certificate (of breadwinner)"
+    "DeathCert": "Death Certificate (of breadwinner)",
+    "BirthCert": "Birth Certificate",
+    "MCHCard": "Mother and Child Protection (MCP) Card",
+    "AddressProof": "Address Proof",
+    "PANCard": "PAN Card",
+    "BusinessProof": "Business Proof / License",
+    "EducationCert": "Educational Certificate",
+    "ProjectReport": "Detailed Project Report"
   },
   "goals": {
     "Agriculture & Farming": "Agriculture & Farming",
@@ -73,7 +80,9 @@
     "Healthcare & Medical": "Healthcare & Medical",
     "Education & Scholarships": "Education & Scholarships",
     "Housing & Shelter": "Housing & Shelter",
-    "Pensions & Social Security": "Pensions & Social Security"
+    "Pensions & Social Security": "Pensions & Social Security",
+    "Women & Children": "Women & Children",
+    "Financial Services": "Financial Services"
   },
   "results": {
     "title": "Eligibility Results",

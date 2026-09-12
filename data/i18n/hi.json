@@ -65,7 +65,14 @@
     "AgeCert": "आयु प्रमाण पत्र",
     "DisabilityCert": "विकलांगता प्रमाण पत्र",
     "ExServiceCert": "पूर्व सैनिक प्रमाण पत्र",
-    "DeathCert": "मृत्यु प्रमाण पत्र (कमाने वाले का)"
+    "DeathCert": "मृत्यु प्रमाण पत्र (कमाने वाले का)",
+    "BirthCert": "जन्म प्रमाण पत्र",
+    "MCHCard": "मातृत्व और बाल संरक्षण (MCP) कार्ड",
+    "AddressProof": "पता प्रमाण",
+    "PANCard": "पैन कार्ड",
+    "BusinessProof": "व्यवसाय प्रमाण / लाइसेंस",
+    "EducationCert": "शैक्षिक प्रमाण पत्र",
+    "ProjectReport": "विस्तृत परियोजना रिपोर्ट (DPR)"
   },
   "goals": {
     "Agriculture & Farming": "कृषि और खेती",
@@ -73,7 +80,9 @@
     "Healthcare & Medical": "स्वास्थ्य सेवा और चिकित्सा",
     "Education & Scholarships": "शिक्षा और छात्रवृत्ति",
     "Housing & Shelter": "आवास और शरण",
-    "Pensions & Social Security": "पेंशन और सामाजिक सुरक्षा"
+    "Pensions & Social Security": "पेंशन और सामाजिक सुरक्षा",
+    "Women & Children": "महिलाएं और बच्चे",
+    "Financial Services": "वित्तीय सेवाएं"
   },
   "results": {
     "title": "पात्रता परिणाम",
